@@ -19,7 +19,7 @@ type User struct {
 	GoogleID     string `gorm:"uniqueIndex" json:"-"`
 	IsGoogleAuth bool   `gorm:"default:false" json:"is_google_auth"`
 
-	// Relationship
+	// User Relationship
 	Categories []Category `gorm:"foreignKey:UserID"
 	json:"categories,omitempty"`
 

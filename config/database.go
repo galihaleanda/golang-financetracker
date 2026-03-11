@@ -5,6 +5,7 @@ import (
 	"log"
 	"os"
 
+	"finance-tracker/models"
 	"gorm.io/driver/postgres"
 	"gorm.io/gorm"
 	"gorm.io/gorm/logger"
