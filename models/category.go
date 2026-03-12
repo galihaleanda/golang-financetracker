@@ -10,8 +10,7 @@ type Category struct {
 	UserID uint   `gorm:"not null" json:"user_id"`
 
 	// Relationship
-	Transactions []Transaction `gorm:"foreignKey:CategoryID"
-	json:"transactions, omitempty"`
+	Transactions []Transaction `gorm:"foreignKey:CategoryID" json:"transactions,omitempty"`
 }
 
 // Default Categories

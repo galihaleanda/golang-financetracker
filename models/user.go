@@ -20,11 +20,9 @@ type User struct {
 	IsGoogleAuth bool   `gorm:"default:false" json:"is_google_auth"`
 
 	// User Relationship
-	Categories []Category `gorm:"foreignKey:UserID"
-	json:"categories,omitempty"`
+	Categories []Category `gorm:"foreignKey:UserID" json:"categories,omitempty"`
 
-	Transactions []Transaction `gorm:"foreignKey:UserID"
-	json:"transactions,omitempty"`
+	Transactions []Transaction `gorm:"foreignKey:UserID" json:"transactions,omitempty"`
 }
 
 // For Api Response with no password
