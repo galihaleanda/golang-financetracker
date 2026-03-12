@@ -3,6 +3,7 @@ module finance-tracker
 go 1.25.7
 
 require (
+	github.com/golang-jwt/jwt/v5 v5.3.1
 	gorm.io/driver/postgres v1.6.0
 	gorm.io/gorm v1.31.1
 )
